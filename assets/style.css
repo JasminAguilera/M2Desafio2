@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gridContainer {
+    background-color: #e5e5e5;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.5fr 8fr 0.5fr;
+    height: 100vh;
+    grid-template-areas: "header header"
+        "aside principal"
+        "footer footer";
+
+}
+
+header {
+    background-color: #37b992;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    background-color: #e5e5e5;
+    grid-area: aside;
+    padding-left: 35px;
+}
+
+.tazas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.navbar li {
+    padding: 5px 0px;
+    list-style: none;
+}
+
+.parentesis {
+    color: rgb(110, 116, 116);
+}
+
+main {
+    background-color: #e5e5e5;
+    grid-area: principal;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+}
+
+.categorias {
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    justify-content: space-between;
+}
+
+.tazas p {
+    color: rgb(110, 116, 116);
+}
+
+.tazas {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    justify-content: space-between;
+
+}
+
+.tazas img {
+    width: 150px;
+    padding: 5px;
+}
+
+.tazas button {
+    background-color: #6fcfb2;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+footer {
+    background-color: white;
+    grid-area: footer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6fcfb2;
+}
+
+.bitter {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
